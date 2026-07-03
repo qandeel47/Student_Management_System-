@@ -3,7 +3,7 @@ from rest_framework import serializers
 
 from courses.models import Course
 from students.models import Student
-from .models import Attendance
+from ..models import Attendance
 
 
 class AttendanceSerializer(serializers.ModelSerializer):

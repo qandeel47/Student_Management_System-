@@ -3,8 +3,8 @@ from rest_framework import serializers
 
 from departments.models import Department
 from users.models import User
-from users.serializers import UserSerializer
-from .models import Teacher
+from users.api.serializers import UserSerializer
+from ..models import Teacher
 
 
 class TeacherSerializer(serializers.ModelSerializer):

@@ -12,13 +12,13 @@ urlpatterns = [
     path("swagger/", SpectacularSwaggerView.as_view(url_name="schema"), name="swagger-ui"),
     path("redoc/", SpectacularRedocView.as_view(url_name="schema"), name="redoc"),
     # Apps
-    path('api/auth/', include('users.urls')),
-    path('api/departments/', include('departments.urls')),
-    path('api/teachers/', include('teachers.urls')),
-    path('api/students/', include('students.urls')),
-    path('api/courses/', include('courses.urls')),
-    path('api/attendance/', include('attendance.urls')),
-    path('api/results/', include('results.urls')),
+    path('api/auth/', include('users.api.urls')),
+    path('api/departments/', include('departments.api.urls')),
+    path('api/teachers/', include('teachers.api.urls')),
+    path('api/students/', include('students.api.urls')),
+    path('api/courses/', include('courses.api.urls')),
+    path('api/attendance/', include('attendance.api.urls')),
+    path('api/results/', include('results.api.urls')),
 ]
 
 if settings.DEBUG:

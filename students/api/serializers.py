@@ -2,10 +2,10 @@ from django.db import transaction
 from rest_framework import serializers
 
 from courses.models import Course
-from courses.serializers import CourseSerializer
+from courses.api.serializers import CourseSerializer
 from users.models import User
-from users.serializers import UserSerializer
-from .models import Student
+from users.api.serializers import UserSerializer
+from ..models import Student
 
 
 class StudentSerializer(serializers.ModelSerializer):
